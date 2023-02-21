@@ -1,4 +1,4 @@
-# dotfiles
+# dotfiles (Debian)
 Personal repository for my dotfiles. Configurations for qtile, rofi, picom, zsh, vim and other tools.
 
 WORK IN PROGRESS, NOT READY FOR USE. 
@@ -17,12 +17,12 @@ cd dotfiles/scripts
 To install the rest of the content, check the `scripts` folder. 
 
 # Tools used by qtile
-- flameshot
-- picom
-- rofi
-- playerctl
-- alacritty
-- firefox
+- flameshot `sudo apt install flameshot`
+- picom `sudo apt install picom`
+- rofi `sudo apt install rofi`
+- playerctl `sudo apt install playerctl
+- alacritty `sudo apt install alacritty`
+- firefox `sudo apt install firefox`
 
 # Main Hotkeys 
 | Function | Hotkey |
