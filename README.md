@@ -20,7 +20,7 @@ To install the rest of the content, check the `scripts` folder.
 - flameshot `sudo apt install flameshot`
 - picom `sudo apt install picom`
 - rofi `sudo apt install rofi`
-- playerctl `sudo apt install playerctl
+- playerctl `sudo apt install playerctl`
 - alacritty `sudo apt install alacritty`
 - firefox `sudo apt install firefox`
 
