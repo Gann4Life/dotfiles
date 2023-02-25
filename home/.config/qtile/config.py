@@ -87,6 +87,7 @@ keys = [
     Key([mod], "r", lazy.spawn("rofi -show drun"), desc="Rofi's application runner"),
     Key([mod], "e", lazy.spawn(f"{terminal} -e ranger"), desc="Opens a file browser using ranger"),
     Key([mod], "w", lazy.spawn("rofi -show window"), desc="Rofi's window browser"),
+    Key([mod], "p", lazy.spawn("rofi -show emoji"), desc="Rofi's emoji picker"),
 
     # Sound
     Key([], "XF86AudioMute", lazy.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle"), desc="Toggles audio mute"),
