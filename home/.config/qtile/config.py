@@ -33,7 +33,7 @@ import os, subprocess
 mod = "mod4"
 browser = "firefox"
 terminal = guess_terminal()
-wallpaper = "~/Pictures/wallpaper.jpg"
+wallpaper = "~/Pictures/Wallpapers/wallpaper.jpg"
 
 @hook.subscribe.startup_once
 def autostart():
