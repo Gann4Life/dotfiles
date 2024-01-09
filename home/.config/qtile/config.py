@@ -141,7 +141,7 @@ secondary = "#b71c1c"
 text_color = "#ff5050"
 
 border_width = 2
-margin = 15
+margin = 0
 
 layouts = [
     # Use the secondar color on border_normal parameter to set it to a different color
@@ -174,33 +174,23 @@ screens = [
     Screen(
         top=bar.Bar(
             [
-                # widget.Spacer(length=bar.STRETCH),
                 widget.CurrentLayout(),
                 widget.GroupBox(),
                 widget.Prompt(),
-                # widget.Chord(
-                #     chords_colors={
-                #         "launch": ("#ff0000", "#ffffff"),
-                #     },
-                #     name_transform=lambda name: name.upper(),
-                # ),
                 widget.WindowName(),
                 widget.Spacer(length=bar.STRETCH),
-                # widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
                 widget.Volume(),
                 widget.Clock(format="| %a %d, %m %Y | %I:%M %p"),
                 widget.Systray(),
-                # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
-                # widget.StatusNotifier(),
                 widget.Canto()
             ],
             50,
             border_width=[
                 0, # Top
-                0, # Right 
+                0, # Right
                 0, # Bottom
                 0  # Left
-            ],  
+            ],
             border_color=[primary, "000000", primary, "000000"],
             background="#00000050",
             margin=[0, margin, 0, margin]
