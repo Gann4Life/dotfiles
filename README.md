@@ -6,16 +6,10 @@ WORK IN PROGRESS, NOT READY FOR USE.
 ## Installation
 Run the following command to install the dotfiles:
 ```bash 
-cd ~/Git # Or any other directory you want to clone the repository to
 git clone https://github.com/gann4life/dotfiles
+./dotfiles/scripts/bootstrap.sh
+rm -rf ./dotfiles
 ```
-Then run the install script:
-```bash
-cd dotfiles/scripts
-./install.sh
-```
-To install the rest of the content, check the `scripts` folder. 
-
 # Tools used by qtile
 - flameshot `sudo apt install flameshot`
 - picom `sudo apt install picom`
