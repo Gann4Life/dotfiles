@@ -10,5 +10,4 @@ parent_path=$(
 )
 cd "$parent_path"
 echo $(pwd)
-# Copy forced and recursively
-cp -rvfi ../home/ ~/
+cp -var ../home/. ~/
