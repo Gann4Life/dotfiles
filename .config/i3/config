@@ -6,6 +6,7 @@
 #
 
 exec_always setxkbmap latam
+exec_always nitrogen --set-zoom-fill ~/Pictures/Wallpapers/main.jpg
 
 # i3 config file (v4)
 #

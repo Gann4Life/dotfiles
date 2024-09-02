@@ -1,24 +1,33 @@
-# dotfiles (Debian)
-Personal repository for my dotfiles. Configurations for qtile, rofi, picom, zsh, vim and other tools.
-
-WORK IN PROGRESS, NOT READY FOR USE. 
+# dotfiles
+My personal configuration files which also include external themes.
 
 ## Installation
-Run the following command to install the dotfiles:
-```bash 
-git clone https://github.com/gann4life/dotfiles
-./dotfiles/scripts/bootstrap.sh
-rm -rf ./dotfiles
-```
-# Tools used by qtile
-- flameshot `sudo apt install flameshot`
-- picom `sudo apt install picom`
-- rofi `sudo apt install rofi`
-- playerctl `sudo apt install playerctl`
-- alacritty `sudo apt install alacritty`
-- firefox `sudo apt install firefox`
+Steps to install (for myself)
 
-# Main Hotkeys 
+1. Clone the repository
+```bash 
+git clone https://github.com/gann4life/dotfiles ~/
+```
+2. Get [rofi-themes-collection](https://github.com/newmanls/rofi-themes-collection)
+```bash
+git clone https://github.com/lr-tech/rofi-themes-collection.git &&
+cd rofi-themes-collection &&
+mkdir -p ~/.local/share/rofi/themes/ &&
+cp themes/* ~/.local/share/rofi/themes/
+```
+3. Get [kitty-themes](https://github.com/dexpota/kitty-themes)
+```bash
+git clone --depth 1 https://github.com/dexpota/kitty-themes.git ~/dotfiles/.config/kitty/kitty-themes
+```
+4. Get [polybar-themes](https://github.com/adi1090x/polybar-themes) (Untested command)
+```bash
+git clone --depth=1 https://github.com/adi1090x/polybar-themes.git && 
+cd polybar-themes && 
+chmod +x setup.sh && 
+./setup.sh
+```
+
+# Hotkeys (Outdated)
 | Function | Hotkey |
 |---|---|
 | Select Window | `MOD` + `HJKL` |
